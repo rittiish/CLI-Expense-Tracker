@@ -1,11 +1,10 @@
 import json
 
-# Try to load existing expenses from a file named "expenses.json"
 try:
     with open("expenses.json", "r") as file:
         expenses = json.load(file)
 except FileNotFoundError:
-    expenses = []#this is a nested list
+    expenses = [] #nested list
 
 print("Expense Tracker Programme")
 while True:
@@ -48,7 +47,7 @@ while True:
         num = input("Enter the serial number: ")
         found = False
         for i in range(len(expenses)):
-            if expenses[i][0] == num: # since ive use a nested list so the line checks the 0 item of every list of main list"expenses"
+            if expenses[i][0] == num: # since ive used a nested list so the line checks the 0 item of every list of main list"expenses"
                 expenses.pop(i)
                 with open("expenses.json", "w") as file:
                             json.dump(expenses, file)
