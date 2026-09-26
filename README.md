@@ -1,2 +1,4 @@
 # CLI-Expense-Tracker
-first python project, small chunks of achivement 
+the programe keeps track of all the expenses of user using functions add,delete,view and total expenditure
+used JSON file so that data is saved evenis the programe terminates
+uploaded with gitignore keeping the privacy of user as priority
